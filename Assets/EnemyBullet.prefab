@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   rb: {fileID: 3159293510944463471}
-  force: 0
+  force: 10
 --- !u!114 &2180175263959895231
 MonoBehaviour:
   m_ObjectHideFlags: 0

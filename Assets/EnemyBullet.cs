@@ -9,11 +9,12 @@ public class EnemyBullet : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, 5f); // ลบเองหลัง 5 วิ
+        rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
         Vector3 vector3 = player.transform.position - transform.position;
         Vector3 direction = vector3;
         rb.linearVelocity = new Vector2(direction.x, direction.y).normalized * force;
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
+
     }
 
     void OnTriggerEnter2D(Collider2D other)

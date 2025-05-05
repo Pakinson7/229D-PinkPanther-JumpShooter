@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
@@ -37,5 +38,6 @@ public class Health : MonoBehaviour
     void Die()
     {
         Destroy(gameObject); // หรืออนิเมชัน ตาย
+        SceneManager.LoadScene(1);
     }
 }

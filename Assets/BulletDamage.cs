@@ -9,7 +9,7 @@ public class BulletDamage : MonoBehaviour
     {
         if (other.CompareTag(targetTag))
         {
-            Health hp = other.GetComponent<Health>();
+            PlayerHealth hp = other.GetComponent<PlayerHealth>();
             if (hp != null)
             {
                 hp.TakeDamage(damage);
